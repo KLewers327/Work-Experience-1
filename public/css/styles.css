@@ -747,6 +747,25 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .site-header--home .container {
+    flex-wrap: wrap;
+  }
+
+  .site-header--home nav {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .site-header--home .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 0;
+  }
+
+  .site-header--home .nav-links li {
+    flex: 0 0 auto;
+  }
+  
   .hero {
     display: flex;
     flex-direction: column;
@@ -768,25 +787,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .site-header--home .container {
-    flex-wrap: wrap;
-  }
-
-  .site-header--home nav {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  .site-header--home .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 0;
-  }
-
-  .site-header--home .nav-links li {
-    flex: 0 0 auto;
-  }
-
   h1 {
     font-size: 40px;
   }
