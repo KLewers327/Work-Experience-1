@@ -1,7 +1,7 @@
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 let formLoadedAt = Date.now();
-const minimumSubmitMilliseconds = 2500;
+const minimumSubmitMilliseconds = 3000;
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();

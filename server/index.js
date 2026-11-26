@@ -16,7 +16,7 @@ app.post('/contact', (req, res) => {
   const formLoadedAt = Number(req.body.formLoadedAt);
   const elapsedMilliseconds = Date.now() - formLoadedAt;
 
-  if (req.body.website || !formLoadedAt || elapsedMilliseconds < 2500) {
+  if (req.body.website || !formLoadedAt || elapsedMilliseconds < 3000) {
     return res.status(200).json({ ok: true });
   }
 
