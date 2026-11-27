@@ -712,6 +712,15 @@ img {
   margin: 0;
 }
 
+.contact-field-wrapper {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
 /* Footer */
 
 .site-footer {

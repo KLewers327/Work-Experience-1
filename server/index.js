@@ -13,6 +13,12 @@ app.post('/contact', (req, res) => {
   const name = (req.body.name || '').trim();
   const email = (req.body.email || '').trim();
   const message = (req.body.message || '').trim();
+  const formLoadedAt = Number(req.body.formLoadedAt);
+  const elapsedMilliseconds = Date.now() - formLoadedAt;
+
+  if (req.body.website || !formLoadedAt || elapsedMilliseconds < 3000) {
+    return res.status(200).json({ ok: true });
+  }
 
   if (!name || !email || !message) {
     return res.status(400).json({ ok: false, error: 'Please fill in your name, email and message.' });
